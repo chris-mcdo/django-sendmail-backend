@@ -37,6 +37,10 @@ class SendMailBackend(BaseEmailBackend):
         ----------
         email_message
             The EmailMessage object to send.
+        
+        Returns
+        -------
+        True if the email was successfully sent, otherwise False.
         """
         # Collect recipients
         recipients = email_message.recipients()
