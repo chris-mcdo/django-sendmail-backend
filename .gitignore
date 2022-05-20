@@ -1,0 +1,7 @@
+.venv
+*.code-workspace
+__pycache__
+**/_version.py
+dist/
+.pytest_cache
+*.egg-info
