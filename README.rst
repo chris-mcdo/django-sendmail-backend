@@ -28,23 +28,23 @@ To use this backend:
    Configure the mailserver to send mail to your host (the one from the
    `EMAIL_HOST <https://docs.djangoproject.com/en/dev/ref/settings/#email-host>`_ setting).
 
+
 2. Install ``django-sendmail-backend`` from pip.
 
 .. code-block:: bash
 
-    $ pip install django-sendmail-backend
+  $ pip install django-sendmail-backend
 
-  Make sure to use ``django-sendmail-backend`` and not ``django_sendmail_backend``.
+Make sure to use ``django-sendmail-backend`` and not ``django_sendmail_backend``.
+
 
 3. Add the following to your Django ``settings.py``
 
 .. code-block:: python
 
     # settings.py
-
-    # The python package is called ``sendmail``
     EMAIL_BACKEND = "sendmail.SendMailBackend"
-
+    
     # replace with the path to your ``sendmail``-like command
     SENDMAIL_COMMAND = "/usr/sbin/sendmail"
 
